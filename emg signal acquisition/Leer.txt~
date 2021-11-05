@@ -1,0 +1,26 @@
+﻿Para usar el programa:
+
+Habilitar el puerto ejecutando en la terminal
+sudo chmod a+rw /dev/ttyACM0
+
+Ejecutar /pruebaSerial/pruebaSerial.ino en el IDE de arduino
+
+Ejecutar ECGmain/ECGmain.py
+
+La documentación del código esta comentada en el, para configurar
+QGraphicsView abrir la carpeta /QGraphicsView donde ahí un video
+explicatorio y los archivos usados en el ejemplo
+
+para abrir los archivos .npy usar los comandos:
+import numpy
+numpy.load('la ruta del archivo')
+El archivo .npy es una lista con listas dentro, para este trabajo,
+se enumeran las siguientes posiciones :
+[0] = Vector de tiempo de la señal filtrada
+[1] = La señal filtrada
+[2] = Tiempos en los cuales se detectaron los picos R
+[5] = Vector de tiempo para la frecuencia cardiaca
+[6] = Frecuencia cardiac
+
+Para conseguir el token de autenticacion de dropbox, ver el video
+de la carpeta /Tokendropbox
